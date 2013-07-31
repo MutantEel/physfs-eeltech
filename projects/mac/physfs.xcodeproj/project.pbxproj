@@ -1,0 +1,422 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		140B469C17A964AC004AE462 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 140B469B17A964AC004AE462 /* Cocoa.framework */; };
+		140B46A617A964AC004AE462 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 140B46A417A964AC004AE462 /* InfoPlist.strings */; };
+		140B46B617A964DE004AE462 /* physfs_casefolding.h in Headers */ = {isa = PBXBuildFile; fileRef = 140B46B217A964DE004AE462 /* physfs_casefolding.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		140B46B717A964DE004AE462 /* physfs_internal.h in Headers */ = {isa = PBXBuildFile; fileRef = 140B46B317A964DE004AE462 /* physfs_internal.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		140B46B817A964DE004AE462 /* physfs_platforms.h in Headers */ = {isa = PBXBuildFile; fileRef = 140B46B417A964DE004AE462 /* physfs_platforms.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		140B46B917A964DE004AE462 /* physfs.h in Headers */ = {isa = PBXBuildFile; fileRef = 140B46B517A964DE004AE462 /* physfs.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		140B487217A964EE004AE462 /* dir.c in Sources */ = {isa = PBXBuildFile; fileRef = 140B46BB17A964EE004AE462 /* dir.c */; };
+		140B487317A964EE004AE462 /* grp.c in Sources */ = {isa = PBXBuildFile; fileRef = 140B46BC17A964EE004AE462 /* grp.c */; };
+		140B487417A964EE004AE462 /* hog.c in Sources */ = {isa = PBXBuildFile; fileRef = 140B46BD17A964EE004AE462 /* hog.c */; };
+		140B487517A964EE004AE462 /* lzma.c in Sources */ = {isa = PBXBuildFile; fileRef = 140B46BE17A964EE004AE462 /* lzma.c */; };
+		140B487617A964EE004AE462 /* mvl.c in Sources */ = {isa = PBXBuildFile; fileRef = 140B46BF17A964EE004AE462 /* mvl.c */; };
+		140B487717A964EE004AE462 /* qpak.c in Sources */ = {isa = PBXBuildFile; fileRef = 140B46C017A964EE004AE462 /* qpak.c */; };
+		140B487817A964EE004AE462 /* wad.c in Sources */ = {isa = PBXBuildFile; fileRef = 140B46C117A964EE004AE462 /* wad.c */; };
+		140B487917A964EE004AE462 /* zip.c in Sources */ = {isa = PBXBuildFile; fileRef = 140B46C217A964EE004AE462 /* zip.c */; };
+		140B49E517A964EF004AE462 /* physfs_byteorder.c in Sources */ = {isa = PBXBuildFile; fileRef = 140B484F17A964EE004AE462 /* physfs_byteorder.c */; };
+		140B49E617A964EF004AE462 /* physfs_unicode.c in Sources */ = {isa = PBXBuildFile; fileRef = 140B485017A964EE004AE462 /* physfs_unicode.c */; };
+		140B49E717A964EF004AE462 /* physfs.c in Sources */ = {isa = PBXBuildFile; fileRef = 140B485117A964EE004AE462 /* physfs.c */; };
+		140B49E917A964EF004AE462 /* macosx.c in Sources */ = {isa = PBXBuildFile; fileRef = 140B485417A964EE004AE462 /* macosx.c */; };
+		140B49EC17A964EF004AE462 /* posix.c in Sources */ = {isa = PBXBuildFile; fileRef = 140B485717A964EE004AE462 /* posix.c */; };
+		140B49ED17A964EF004AE462 /* unix.c in Sources */ = {isa = PBXBuildFile; fileRef = 140B485817A964EE004AE462 /* unix.c */; };
+		140B4A0717A96571004AE462 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 140B4A0617A96571004AE462 /* IOKit.framework */; };
+		140B4AEC17A96798004AE462 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 140B4AEB17A96798004AE462 /* libz.dylib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		140B469817A964AC004AE462 /* physfs.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = physfs.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		140B469B17A964AC004AE462 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		140B469E17A964AC004AE462 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		140B469F17A964AC004AE462 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		140B46A017A964AC004AE462 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		140B46A317A964AC004AE462 /* physfs-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "physfs-Info.plist"; sourceTree = "<group>"; };
+		140B46A517A964AC004AE462 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		140B46A717A964AC004AE462 /* physfs-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "physfs-Prefix.pch"; sourceTree = "<group>"; };
+		140B46B217A964DE004AE462 /* physfs_casefolding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = physfs_casefolding.h; path = ../../../include/physfs_casefolding.h; sourceTree = "<group>"; };
+		140B46B317A964DE004AE462 /* physfs_internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = physfs_internal.h; path = ../../../include/physfs_internal.h; sourceTree = "<group>"; };
+		140B46B417A964DE004AE462 /* physfs_platforms.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = physfs_platforms.h; path = ../../../include/physfs_platforms.h; sourceTree = "<group>"; };
+		140B46B517A964DE004AE462 /* physfs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = physfs.h; path = ../../../include/physfs.h; sourceTree = "<group>"; };
+		140B46BB17A964EE004AE462 /* dir.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = dir.c; sourceTree = "<group>"; };
+		140B46BC17A964EE004AE462 /* grp.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = grp.c; sourceTree = "<group>"; };
+		140B46BD17A964EE004AE462 /* hog.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = hog.c; sourceTree = "<group>"; };
+		140B46BE17A964EE004AE462 /* lzma.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = lzma.c; sourceTree = "<group>"; };
+		140B46BF17A964EE004AE462 /* mvl.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = mvl.c; sourceTree = "<group>"; };
+		140B46C017A964EE004AE462 /* qpak.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = qpak.c; sourceTree = "<group>"; };
+		140B46C117A964EE004AE462 /* wad.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = wad.c; sourceTree = "<group>"; };
+		140B46C217A964EE004AE462 /* zip.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = zip.c; sourceTree = "<group>"; };
+		140B484F17A964EE004AE462 /* physfs_byteorder.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = physfs_byteorder.c; path = ../../../src/physfs_byteorder.c; sourceTree = "<group>"; };
+		140B485017A964EE004AE462 /* physfs_unicode.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = physfs_unicode.c; path = ../../../src/physfs_unicode.c; sourceTree = "<group>"; };
+		140B485117A964EE004AE462 /* physfs.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = physfs.c; path = ../../../src/physfs.c; sourceTree = "<group>"; };
+		140B485417A964EE004AE462 /* macosx.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = macosx.c; sourceTree = "<group>"; };
+		140B485717A964EE004AE462 /* posix.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = posix.c; sourceTree = "<group>"; };
+		140B485817A964EE004AE462 /* unix.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = unix.c; sourceTree = "<group>"; };
+		140B4A0617A96571004AE462 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
+		140B4AEB17A96798004AE462 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		140B469417A964AC004AE462 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				140B4AEC17A96798004AE462 /* libz.dylib in Frameworks */,
+				140B4A0717A96571004AE462 /* IOKit.framework in Frameworks */,
+				140B469C17A964AC004AE462 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		140B468E17A964AC004AE462 = {
+			isa = PBXGroup;
+			children = (
+				140B4AEB17A96798004AE462 /* libz.dylib */,
+				140B46A117A964AC004AE462 /* physfs */,
+				140B469A17A964AC004AE462 /* Frameworks */,
+				140B469917A964AC004AE462 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		140B469917A964AC004AE462 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				140B469817A964AC004AE462 /* physfs.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		140B469A17A964AC004AE462 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				140B4A0617A96571004AE462 /* IOKit.framework */,
+				140B469B17A964AC004AE462 /* Cocoa.framework */,
+				140B469D17A964AC004AE462 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		140B469D17A964AC004AE462 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				140B469E17A964AC004AE462 /* AppKit.framework */,
+				140B469F17A964AC004AE462 /* CoreData.framework */,
+				140B46A017A964AC004AE462 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		140B46A117A964AC004AE462 /* physfs */ = {
+			isa = PBXGroup;
+			children = (
+				140B46B117A964D4004AE462 /* src */,
+				140B46B017A964CD004AE462 /* include */,
+				140B46A217A964AC004AE462 /* Supporting Files */,
+			);
+			path = physfs;
+			sourceTree = "<group>";
+		};
+		140B46A217A964AC004AE462 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				140B46A317A964AC004AE462 /* physfs-Info.plist */,
+				140B46A417A964AC004AE462 /* InfoPlist.strings */,
+				140B46A717A964AC004AE462 /* physfs-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		140B46B017A964CD004AE462 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				140B46B217A964DE004AE462 /* physfs_casefolding.h */,
+				140B46B317A964DE004AE462 /* physfs_internal.h */,
+				140B46B417A964DE004AE462 /* physfs_platforms.h */,
+				140B46B517A964DE004AE462 /* physfs.h */,
+			);
+			name = include;
+			sourceTree = "<group>";
+		};
+		140B46B117A964D4004AE462 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				140B46BA17A964EE004AE462 /* archivers */,
+				140B484F17A964EE004AE462 /* physfs_byteorder.c */,
+				140B485017A964EE004AE462 /* physfs_unicode.c */,
+				140B485117A964EE004AE462 /* physfs.c */,
+				140B485217A964EE004AE462 /* platform */,
+			);
+			name = src;
+			sourceTree = "<group>";
+		};
+		140B46BA17A964EE004AE462 /* archivers */ = {
+			isa = PBXGroup;
+			children = (
+				140B46BB17A964EE004AE462 /* dir.c */,
+				140B46BC17A964EE004AE462 /* grp.c */,
+				140B46BD17A964EE004AE462 /* hog.c */,
+				140B46BE17A964EE004AE462 /* lzma.c */,
+				140B46BF17A964EE004AE462 /* mvl.c */,
+				140B46C017A964EE004AE462 /* qpak.c */,
+				140B46C117A964EE004AE462 /* wad.c */,
+				140B46C217A964EE004AE462 /* zip.c */,
+			);
+			name = archivers;
+			path = ../../../src/archivers;
+			sourceTree = "<group>";
+		};
+		140B485217A964EE004AE462 /* platform */ = {
+			isa = PBXGroup;
+			children = (
+				140B485417A964EE004AE462 /* macosx.c */,
+				140B485717A964EE004AE462 /* posix.c */,
+				140B485817A964EE004AE462 /* unix.c */,
+			);
+			name = platform;
+			path = ../../../src/platform;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		140B469517A964AC004AE462 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				140B46B617A964DE004AE462 /* physfs_casefolding.h in Headers */,
+				140B46B717A964DE004AE462 /* physfs_internal.h in Headers */,
+				140B46B817A964DE004AE462 /* physfs_platforms.h in Headers */,
+				140B46B917A964DE004AE462 /* physfs.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		140B469717A964AC004AE462 /* physfs */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 140B46AD17A964AC004AE462 /* Build configuration list for PBXNativeTarget "physfs" */;
+			buildPhases = (
+				140B469317A964AC004AE462 /* Sources */,
+				140B469417A964AC004AE462 /* Frameworks */,
+				140B469517A964AC004AE462 /* Headers */,
+				140B469617A964AC004AE462 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = physfs;
+			productName = physfs;
+			productReference = 140B469817A964AC004AE462 /* physfs.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		140B468F17A964AC004AE462 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Mutant Eel";
+			};
+			buildConfigurationList = 140B469217A964AC004AE462 /* Build configuration list for PBXProject "physfs" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 140B468E17A964AC004AE462;
+			productRefGroup = 140B469917A964AC004AE462 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				140B469717A964AC004AE462 /* physfs */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		140B469617A964AC004AE462 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				140B46A617A964AC004AE462 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		140B469317A964AC004AE462 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				140B487217A964EE004AE462 /* dir.c in Sources */,
+				140B487317A964EE004AE462 /* grp.c in Sources */,
+				140B487417A964EE004AE462 /* hog.c in Sources */,
+				140B487517A964EE004AE462 /* lzma.c in Sources */,
+				140B487617A964EE004AE462 /* mvl.c in Sources */,
+				140B487717A964EE004AE462 /* qpak.c in Sources */,
+				140B487817A964EE004AE462 /* wad.c in Sources */,
+				140B487917A964EE004AE462 /* zip.c in Sources */,
+				140B49E517A964EF004AE462 /* physfs_byteorder.c in Sources */,
+				140B49E617A964EF004AE462 /* physfs_unicode.c in Sources */,
+				140B49E717A964EF004AE462 /* physfs.c in Sources */,
+				140B49E917A964EF004AE462 /* macosx.c in Sources */,
+				140B49EC17A964EF004AE462 /* posix.c in Sources */,
+				140B49ED17A964EF004AE462 /* unix.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		140B46A417A964AC004AE462 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				140B46A517A964AC004AE462 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		140B46AB17A964AC004AE462 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				"GCC_PREPROCESSOR_DEFINITIONS[arch=*]" = (
+					PHYSFS_SUPPORTS_ZIP,
+					PHYSFS_SUPPORTS_GRP,
+					PHYSFS_SUPPORTS_QPAK,
+					PHYSFS_SUPPORTS_HOG,
+					PHYSFS_SUPPORTS_MVL,
+					PHYSFS_SUPPORTS_WAD,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		140B46AC17A964AC004AE462 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				"GCC_PREPROCESSOR_DEFINITIONS[arch=*]" = (
+					PHYSFS_SUPPORTS_ZIP,
+					PHYSFS_SUPPORTS_GRP,
+					PHYSFS_SUPPORTS_QPAK,
+					PHYSFS_SUPPORTS_HOG,
+					PHYSFS_SUPPORTS_MVL,
+					PHYSFS_SUPPORTS_WAD,
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		140B46AE17A964AC004AE462 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_VERSION = A;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "physfs/physfs-Prefix.pch";
+				INFOPLIST_FILE = "physfs/physfs-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Debug;
+		};
+		140B46AF17A964AC004AE462 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_VERSION = A;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "physfs/physfs-Prefix.pch";
+				INFOPLIST_FILE = "physfs/physfs-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		140B469217A964AC004AE462 /* Build configuration list for PBXProject "physfs" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				140B46AB17A964AC004AE462 /* Debug */,
+				140B46AC17A964AC004AE462 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		140B46AD17A964AC004AE462 /* Build configuration list for PBXNativeTarget "physfs" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				140B46AE17A964AC004AE462 /* Debug */,
+				140B46AF17A964AC004AE462 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 140B468F17A964AC004AE462 /* Project object */;
+}

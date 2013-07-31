@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'physfs' target in the 'physfs' project
+//
+
+#ifdef __OBJC__
+	#import <Cocoa/Cocoa.h>
+#endif
